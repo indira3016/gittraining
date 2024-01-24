@@ -2,7 +2,7 @@ name: wf1
 on: 
   push:
   schedule:
-   - cron: "*/5 * * * *"
+   - cron: "*/1 * * * *"
 jobs:
   job1: 
     runs-on: ubuntu-latest
