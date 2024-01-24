@@ -1,9 +1,12 @@
 name: wf1
 on: 
-  push
+  push:
+  schedule:
+   - cron: "*/5 * * * *"
+  workflow_dispatch:
 jobs:
-  job1:
+  job1: 
     runs-on: ubuntu-latest
     steps:
-      - name: steps for testing
+      - name: step1 for testing
         run: echo hello world
