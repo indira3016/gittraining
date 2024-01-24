@@ -3,6 +3,7 @@ on:
   push:
      branches: 
       - dev
+      - stage
 jobs:
   job1:
     runs-on: ubuntu-latest
