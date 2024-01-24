@@ -1,9 +1,11 @@
 name: wf1
 on: 
-  push
+  push:
+     branches: 
+      - dev
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
       - name: steps for testing
-        run: echo hello world
+        run: echo hello world from dev branch
